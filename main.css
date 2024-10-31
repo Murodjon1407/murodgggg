@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+}
+body{
+    background-color: black;
+}
+@media(max-width:1000px){
+    body{
+        background-color: blue;
+    }
+}
+@media(min-width:500px){
+    body{
+        background-color: aqua;
+    }
+}
+.bola{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 25px;
+    text-align: center;
+}
+.ota{
+    display: flex;
+    justify-content: space-around;
+}
+@media(max-width:1000px){
+    .ota{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .bola{
+        width: 200px;
+        background-color: brown;
+    }
+}
+@media(max-width:665px){
+    .bola{
+        width: 300px;
+    }
+    .bola:nth-child(odd){
+        background-color: blue;
+    }
+}
+@media(max-width:500px){
+    .ota{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .bola{
+        width: 200px;
+        background-color: palegreen;
+    }
+}
+@media(max-width:800px){
+    .ota{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .bola{
+        width: 350px;
+        background-color: peru;
+    }
+}
+@media(max-width:900px){
+    .ota{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .bola{
+        width: 250px;
+        background-color: teal;
+    }
+}
